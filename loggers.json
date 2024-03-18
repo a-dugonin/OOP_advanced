@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "default": {
+            "format": "[%(levelname)-10s] [модуль:%(name)22s] %(asctime)-25s - %(message)s"
+        }
+    },
+    "handlers": {
+        "file": {
+            "class": "logging.FileHandler",
+            "level": "INFO",
+            "formatter": "default",
+            "filename": "/home/anton/PycharmProjects/OOP_advanced/log.log"
+        }
+    },
+    "loggers": {
+        "default": {
+            "handlers": ["file"],
+            "level": "INFO"
+        }
+    }
+}
