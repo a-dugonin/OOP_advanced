@@ -1,6 +1,19 @@
 from loggers import get_logger
+# from task_1.context_manager import File
+from task_2.my_math_module import MyMath
 
 logger = get_logger(__name__)
 
 if __name__ == '__main__':
-    logger.info('Тестирование логирования')
+    # Ниже код для запуска скрипта реализованного в рамках task_1
+    # logger.info("Запуск скрипта из модуля context_manager (task_1)")
+    # with File('new_file.txt', 'r') as file:
+    #     pass
+    # logger.info(f"Работа с контекст менеджером завершена")
+
+    # Ниже код для запуска скрипта реализованного в рамках task_2
+    logger.info("Запуск скрипта из модуля my_math_module (task_2)")
+    res_1 = MyMath.circle_len(radius=5)
+    res_2 = MyMath.circle_sq(radius=6)
+    print(res_1)
+    print(res_2)
